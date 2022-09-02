@@ -222,7 +222,7 @@ public class Arreglos<E> {
       * @param b
       * @throws IndiceFueraDeRango
       */
-	public void intervalo(int a, int b) throws IndiceFueraDeRango {
+ 	public void intervalo(int a, int b) throws IndiceFueraDeRango {
 		if (a < 0 || b >= l.length || a > b || a == b) {
 			throw new IndiceFueraDeRango("Indice fuera de rango");
 		}
@@ -255,7 +255,7 @@ public class Arreglos<E> {
 	 * Método para calcular el máximo del intervalo
 	 * @return
 	 */
-	public Integer primyseg() {
+	public void  primyseg() throws IndiceFueraDeRango {
 		Integer tmp=null;
 		Integer aux= 0;
 		Integer seg=0;
@@ -268,7 +268,9 @@ public class Arreglos<E> {
 				
 			} 
 			i++;}
-		return seg;
+		//return seg;
+		System.out.println("El mayor valor es :"+aux);
+		System.out.println("El segundo valor es:"+seg);
 		
 	}
 	

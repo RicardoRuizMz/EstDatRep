@@ -21,7 +21,7 @@ public class Problemas {
 
 
 
-		Arreglos<Integer> numeros = new Arreglos<>(100);
+		Arreglos<Integer> numeros = new Arreglos<>(1000);
 		
 		int max = 99, min = 0;
 	
@@ -35,11 +35,12 @@ public class Problemas {
 			numeros.imprime();
 
 			System.out.println("El promedio es: " + numeros.promediar());
-			System.out.println("El intervalo es: ");
-			numeros.intervalo(5, 6);
-			System.out.println("El maximo es: " + numeros.max());
-			System.out.println("El numero segundo es: " + numeros.primyseg());
-			System.out.println("El minimo es: " + numeros.min());
+			//System.out.println("Los intervalos son: ");
+			//numeros.intervalo(4, 6);
+			numeros.primyseg();
+			//System.out.println("El 1er numero es: " + numeros.max());
+			//System.out.println("El 2do numero es: " + numeros.primyseg());
+			//System.out.println("El minimo es: " + numeros.min());
 
 		} catch (IndiceFueraDeRango e) {
 			// TODO: handle exception
