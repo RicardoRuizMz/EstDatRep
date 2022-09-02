@@ -251,6 +251,29 @@ public class Arreglos<E> {
 		return aux;
 		
 	}
+	/**
+	 * Método para calcular el máximo del intervalo
+	 * @return
+	 */
+	public Integer primyseg() {
+		Integer tmp=null;
+		Integer aux= 0;
+		Integer seg=0;
+		int i=0;
+		while ( i < l.length) {
+			tmp=(Integer) l[i];
+			if (tmp>aux) {
+				seg=aux;
+				aux=tmp;
+				
+			} 
+			i++;}
+		return seg;
+		
+	}
+	
+	
+	
 	
 	
 	/**
