@@ -1,10 +1,10 @@
-package fes.aragon.utilerias.dinamicas.listasimple;
+package fes.aragon.utilerias.dinamicas.listaSimple;
 
 /**
  * Clase que maneja Listas Simples Los Indices se manejan apartir del numero 0,
  * es decir, el primer elemento tiene indice 0
  * 
- * @author Ricardo Ruiz Martinez 319244519 
+ * 
  *
  * @param <E>
  */
